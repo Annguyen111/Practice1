@@ -249,7 +249,9 @@ header {
 }
 
 .category__container {
-    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    position: relative;
 }
 
 .category__container .category__title {
@@ -263,10 +265,19 @@ header {
 }
 
 .category__slider {
-
+    margin-top: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.category__slider .slider__link {
+.category__slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider__link {
     color: var(--main--color);
     display: block;
     font-size: 24px;
@@ -276,30 +287,40 @@ header {
     float: right;
 }
 
-.slider__box {
-    margin-top: 20px;
-    position: relative;
-}
-
-.category__carousel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-}
-
-.category__carousel .category__card {
+.category__slider .category__card {
     width: 291px;
     height: 432px;
-    background: url("../images/slider.png");
-    background-position: 80% 70% ;
+    background: url('../images/slider.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 80% 70%;
     position: relative;
+    flex-shrink: 0;
+}   
+
+.category__slider .category__card:nth-child(2) {
+    background: url('../images/slider2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
 }
 
-.category__carousel .category__card::before {
+.category__slider .category__card:nth-child(3),
+.category__slider .category__card:nth-child(5) {
+    background: url('../images/slider3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+}
+
+.category__slider .category__card:nth-child(4) {
+    background: url('../images/slider4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+}
+
+.category__slider .category__card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -307,20 +328,121 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .category__card h2 {
     position: absolute;
     bottom: 0;
-    padding: 10px 20px;
-    color: rgba(255, 255, 255, 1);
+    left: 0;
+    z-index: 3;
     font-size: 32px;
     font-weight: 600;
-    line-height: 48px;
     font-family: Poppins, sans-serif;
-
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+    padding: 8px 15px;
 }
 
-.slider__box .btn__transform {
+.category__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
+    top: 55%;
+    left: 0;
+    z-index: 8;
+    padding: 0px 40px;
+}   
+
+.category__btn .category__btn--next,
+.category__btn .category__btn--prev {
+    background-color: var(--main--color);
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.category__btn .category__btn--next:hover i,
+.category__btn .category__btn--prev:hover i{
+    opacity: 0.8;
+}
+
+.category__btn i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* Experts Section */
+#experts__section {
+    height: 671px;
+    background: url('../images/experts-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experts__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.art__box {
+
+    width: 373.31px;
+    height: 373.31px;
+    border-radius: 50%;
+    background-color: rgba(255, 231, 219, 1);
+    position: relative;
+    z-index: 1;
+}
+
+.art__box::after {
+    content: '';
+    position: absolute;
+    top: -65px;
+    left: -65px;
+    z-index: 10;
+    width: 498px;
+    height: 498px;
+    border-radius: 50%;
+    border: 3.38px dashed rgba(247, 126, 35, 1);
+}
+
+.experts__left {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experts__left .thumb__art {
+    position: absolute;
+    background: url('../images/experts-img.png');
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+    background-size: cover;
+    top: -210.74px;
+    left: -451.51px;
+    z-index: 5;
+    width: 500px;
+    height: 609.05px;
+}
+
+.experts__left .expert__card {
+    position: absolute;
+}
+
+.experts__right {
+    width: 50%;
 }
