@@ -192,11 +192,21 @@ header {
 
 .banner__content .banner__btn {
   margin-top: 3%;
-  background-color: var(--main--color);
+  background-color: rgba(255, 111, 40, 1);
   color: #ffffff;
-  padding: 15px 25px;
+  padding: 20px 35px;
   border: none;
   border-radius: 4px;
+  font-family: Source Code Pro, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.banner__content .banner__btn:hover {
+  background-color: #ffffff;
+  color: rgba(255, 111, 40, 1);
 }
 
 .banner__other {
@@ -253,10 +263,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: -70px;
+  position: fixed;
+  top: 550px;
   transform: translateY(100%);
   right: 130px;
+  z-index: 9999;
 }
 
 /* Category Section */
@@ -268,6 +279,7 @@ header {
   padding-top: 20px;
   padding-bottom: 80px;
   position: relative;
+  z-index: 1;
 }
 
 .category__container .category__title {
@@ -313,6 +325,7 @@ header {
   background-position: 80% 70%;
   position: relative;
   flex-shrink: 0;
+  z-index: 2;
 }
 
 .category__slider .category__card:nth-child(2) {
@@ -385,7 +398,12 @@ header {
 
 .category__btn .category__btn--next:hover i,
 .category__btn .category__btn--prev:hover i {
-  opacity: 0.8;
+  color: rgba(255, 111, 40, 1);
+}
+
+.category__btn .category__btn--next:hover ,
+.category__btn .category__btn--prev:hover {
+  background-color: #ffffff;
 }
 
 .category__btn i {
@@ -412,6 +430,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  z-index: 1;
 }
 
 .art__box {
@@ -612,6 +631,11 @@ header {
   font-family: Source Code Pro, sans-serif;
 }
 
+.experts__right .right__btn:hover {
+  background-color: #ffffff;
+  color: rgba(255, 111, 40, 1);
+}
+
 /* Course Section */
 #course__section {
 }
@@ -664,10 +688,20 @@ header {
 .course__list .course__list--item {
   width: 410px;
   height: 444px;
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+}
+
+.course__list .course__list--item:hover {
+  transform: translateY(-30px);
+  transition: all 0.3s linear;
+}
+
+.course__list .course__list--item:not(:hover) {
+  transform: translateY(0px);
+  transition: all 0.3s linear;
 }
 
 .course__list--item img {
@@ -930,6 +964,11 @@ header {
   font-family: Source Code Pro, sans-serif;
 }
 
+.examination__left .right__btn:hover {
+  background-color: #ffffff;
+  color: rgba(255, 111, 40, 1);
+}
+
 /* Popular Section */
 #popular__section {
   margin-top: 50px;
@@ -1068,7 +1107,12 @@ header {
 
 .popular__btn .popular__btn--next:hover i,
 .popular__btn .popular__btn--prev:hover i {
-  opacity: 0.8;
+  color: rgba(255, 111, 40, 1);
+}
+
+.popular__btn .popular__btn--next:hover ,
+.popular__btn .popular__btn--prev:hover  {
+  background-color: #ffffff;
 }
 
 .popular__btn i {
@@ -1502,7 +1546,12 @@ header {
 
 .fetured__btn .fetured__btn--next:hover i,
 .fetured__btn .fetured__btn--prev:hover i {
-  opacity: 0.8;
+  color: rgba(255, 111, 40, 1);
+}
+
+.fetured__btn .fetured__btn--next:hover ,
+.fetured__btn .fetured__btn--prev:hover  {
+ background-color: #ffffff;
 }
 
 .fetured__btn i {
@@ -1511,8 +1560,200 @@ header {
   line-height: 30px;
 }
 
-
 /* Footer */
 footer {
-  
+  margin-top: 70px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.footer__container {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__container .text__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text__box .text__box--link {
+  width: 296px;
+}
+
+.text__box .text__box--link a {
+  color: var(--main--color);
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 41.23px;
+  font-family: Source Code Pro, sans-serif;
+  position: relative;
+}
+
+.text__box .text__box--link .link__title::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--main--color);
+  border-radius: 50%;
+  position: absolute;
+  left: 41.5px;
+  top: 10px;
+}
+
+.text__box .text__box--link .link__title::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: var(--main--color);
+  border-radius: 50%;
+  position: absolute;
+  left: 52.5px;
+  top: 10px;
+}
+
+.text__box--link p {
+  margin: 20px 0px;
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.text__box--link .link__box .link__item {
+  display: inline-block;
+}
+
+.link__box .link__item a {
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.link__item a i {
+  width: 19.05px;
+  height: 20px;
+}
+
+.text__box .address__box {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address__link .address__item {
+  margin-bottom: 15px;
+}
+
+.address__link .address__item,
+.address__box .company {
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.address__link .address__item p,
+.address__box .company a {
+  font-weight: 400px;
+}
+
+.company__list {
+  margin-top: 20px;
+}
+
+.company__list .list__item {
+  margin-top: 10px;
+}
+.company__list .list__item a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer__container .email__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  width: 545px;
+}
+
+.email__box h3 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form__email {
+  display: flex;
+  align-items: center;
+}
+
+.email__box .form__email input {
+  width: 75%;
+  padding: 16px 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+
+.email__box .form__email input::placeholder {
+  color: rgba(247, 126, 35, 1);
+}
+
+.email__box .form__email button {
+  padding: 16px 25px;
+  background-color: rgba(247, 126, 35, 1);
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  width: 25%;
+}
+
+.logo__box {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo__box .logo__img {
+  width: 193.63px;
+  height: 37px;
+}
+
+.logo__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo__box .author {
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-left: 30px;
 }
