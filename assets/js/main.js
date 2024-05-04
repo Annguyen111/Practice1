@@ -51,3 +51,44 @@ popularSlider.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+// =================================================================
+const recentSlider = [...document.querySelectorAll('.recent__slider')]
+const nextBtnnnn = [...document.querySelectorAll('.recent__btn--next')]
+const prevBtnnnn = [...document.querySelectorAll('.recent__btn--prev')]
+
+recentSlider.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nextBtnnnn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    prevBtnnnn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+// =================================================================
+const reviewSlider = [...document.querySelectorAll('.slider__box')]
+const nextBtnnnnn = [...document.querySelectorAll('.review__btn--next')]
+const prevBtnnnnn = [...document.querySelectorAll('.review__btn--prev')]
+
+reviewSlider.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nextBtnnnnn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    prevBtnnnnn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+function scrollToTop() {
+    var element = document.documentElement;
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+}
