@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,27 +16,47 @@
     <div class="scroll__btn--up" onclick="scrollToTop()">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
-    <header>
+    <header class="header">
         <div class="container header__container">
-            <a href="" class="header__logo">
-                Fountain
-            </a>
+            <div class="logo-box">
+                <a href="" class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <a href="" class="header__logo">
+                    Fountain
+                </a>
+            </div>
             <nav class="header__nav">
-                <ul class="nav__main">
+                <ul class="nav__main sidebar">
                     <li class="nav__item">
-                        <a href="">Home</a>
+                        <div class="item-link">
+                            <a class="link-open" href="">Home</a>
+                            <a class="link-hidden" href="">Home</a>
+                        </div>
                     </li>
                     <li class="nav__item">
-                        <a href="">Courses</a>
+                        <div class="item-link">
+                            <a class="link-open" href="">Courses</a>
+                            <a class="link-hidden" href="">Courses</a>
+                        </div>
                     </li>
                     <li class="nav__item">
-                        <a href="">Instructors</a>
+                        <div class="item-link">
+                            <a class="link-open" href="">Instructors</a>
+                            <a class="link-hidden" href="">Instructors</a>
+                        </div>
                     </li>
                     <li class="nav__item">
-                        <a href="">Schedules</a>
+                        <div class="item-link">
+                            <a class="link-open" href="">Schedules</a>
+                            <a class="link-hidden" href="">Schedules</a>
+                        </div>
                     </li>
                     <li class="nav__item">
-                        <a href="">Contact Us</a>
+                        <div class="item-link">
+                            <a class="link-open" href="">Contact Us</a>
+                            <a class="link-hidden" href="">Contact Us</a>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -46,568 +67,586 @@
                 <a class="login__btn" href="">Login</a>
                 <a class="register__btn" href="">Register</a>
             </div>
+            <a href="" class="user-logo">
+                <i class="fa-solid fa-user"></i>
+            </a>
         </div>
     </header>
-    <section id="banner__section" class="with_common">
-        <div class="banner__content">
-            <h1 class="banner__title">A Classical Education for the Future</h1>
-            <p class="banner__txt">We prepare you to engage in the world that is and to help bring about a world that
-                ought to be</p>
-            <button class="banner__btn">
-                Get Started
-            </button>
-            <div class="banner__other">
-                <ul>
-                    <li>
-                        <i class="fa-regular fa-message"></i>
-                        <a href="">Live chat</a>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-hand"></i>
-                        <a href="">Examination</a>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                        <a href="">Competition</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="category__section" class="with_common">
-        <div class="container category__container">
-            <h1 class="category__title">Top cartegories</h1>
-            <a href="" class="slider__link">See all</a>
-            <div style="clear: both;"></div>
-            <div class="category__slider with_common">
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Marketing</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Programming</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Technology</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Marketing</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-                <div class="category__card ">
-                    <div class="card__content">
-                        <h2>Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
-                            massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis montes,
-                            diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
-                    </div>
-                </div>
-            </div>
-            <div class="category__btn with_common">
-                <button class="category__btn--prev">
-                    <i class="fa-solid fa-arrow-left"></i>
+    <main>
+        <section id="banner__section" class="with_common">
+            <div class="banner__content">
+                <h1 class="banner__title">A Classical Education for the Future</h1>
+                <p class="banner__txt">We prepare you to engage in the world that is and to help bring about a world
+                    that
+                    ought to be</p>
+                <button class="banner__btn">
+                    Get Started
                 </button>
-                <button class="category__btn--next">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="experts__section" class="with_common">
-        <div class="container experts__container">
-            <div class="experts__left">
-                <div class="art__box">
-                    <div class="thumb__art"></div>
-                </div>
-                <div class="expert__card">
-                    <span class="user__icon">
-                        <i class="fa-regular fa-user"></i>
-                    </span>
-                    <h3 class="main__txt"> <span>Outstanding</span> <br>Instructors</h3>
-                    <div class="arts">
-                        <img class="one" src="./assets/images/arts.jpg" alt="">
-                        <img class="two" src="./assets/images/arts.jpg" alt="">
-                        <img class="three" src="./assets/images/arts.jpg" alt="">
-                    </div>
+                <div class="banner__other">
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-message"></i>
+                            <a href="">Live chat</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-hand"></i>
+                            <a href="">Examination</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <a href="">Competition</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="experts__right">
-                <h1 class="main__title">We are <span>Experts</span> Learning Institution</h1>
-                <p class="sub__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum
-                    volutpat platea mi,
-                    adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </p>
-                <button class="right__btn">Enroll now</button>
-            </div>
-        </div>
-    </section>
-    <section id="course__section" class="with_common">
-        <div class="container course__container">
-            <h1 class="course__title">Explore our popular course</h1>
-            <a href="" class="course__sort">
-                <i class="fa-solid fa-arrow-down-long"></i>
-                Sort by</a>
-            <div style="clear: both;"></div>
-            <div class="course__list">
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Learn Marketing from Top Instructors.</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
-                        </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
+        </section>
+        <section id="category__section" class="with_common">
+            <div class="container category__container">
+                <h1 class="category__title">Top cartegories</h1>
+                <a href="" class="slider__link">See all</a>
+                <div style="clear: both;"></div>
+                <div class="category__slider with_common">
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Marketing</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
                         </div>
                     </div>
-                </div>
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img2.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Front-end development is not hard as you think</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
                         </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
+                    </div>
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Programming</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
+                        </div>
+                    </div>
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Technology</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
+                        </div>
+                    </div>
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Marketing</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
+                        </div>
+                    </div>
+                    <div class="category__card ">
+                        <div class="card__content">
+                            <h2>Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nibh netus auctor consect
+                                massa. Maecen vivamus sed nibh enim sed. Hac ridiculus tellus urna quam odio quis
+                                montes,
+                                diam. Malesuada ut urna eu faucibus faucibus faucibus u</p>
                         </div>
                     </div>
                 </div>
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img3.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Everrything you need to know in UX</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
-                        </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
-                        </div>
+                <div class="category__btn with_common">
+                    <button class="category__btn--prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="category__btn--next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="experts__section" class="with_common">
+            <div class="container experts__container">
+                <div class="experts__left">
+                    <div class="art__box">
+                        <img class="art__box--img" src="./assets/images/expert-img.png" alt="">
                     </div>
-                </div>
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img4.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Learn photography with ease</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
-                        </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img5.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Be a pro in data analysis</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
-                        </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="course__list--item">
-                    <img src="./assets/images/course-img6.jpg" alt="">
-                    <div class="item__content">
-                        <div class="item__title">
-                            <h4>Ethical Harking is not hard as you think</h4>
-                            <span class="review">
-                                <i class="fa-regular fa-star"></i>
-                                4.5
-                            </span>
-                        </div>
-                        <div class="item__time">
-                            <div class="item__number">
-                                <p>6 weeks</p>
-                                <a href="">
-                                    <i class="fa-solid fa-users"></i>
-                                    1.5k Students
-                                </a>
-                            </div>
-                            <h3 class="item__price">30.5$</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="examination__section" class="with_common">
-        <div class="container examination__container">
-            <div class="examination__left">
-                <h1 class="main__title">Our online <span>examination</span> is top-notch</h1>
-                <p class="sub__title">Prepare your self for greater challenges with our online examination.</p>
-                <button class="right__btn">Take a rest</button>
-            </div>
-            <div class="examination__right">
-                <div class="art__box">
-                    <div class="thumb__art"></div>
-                </div>
-                <div class="examination__card">
-                    <span class="user__icon">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                    </span>
-                    <h3 class="main__txt"> <span>Increase</span> <br>Your<br>Job opportunity</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="popular__section" class="with_common">
-        <div class="container popular__container">
-            <h1 class="popular__title">Popular examination</h1>
-            <a href="" class="slider__link">See all</a>
-            <div style="clear: both;"></div>
-            <div class="popular__slider with_common">
-                <div class="popular__card ">
-                    <h2>NATURE <br> of Science</h2>
-                </div>
-                <div class="popular__card ">
-                    <h2>2022 <br> Astro Report</h2>
-                </div>
-                <div class="popular__card ">
-                    <h2>Data Analysis <br> With Python</h2>
-                    <img src="./assets/images/python-logo.png" alt="Python Logo">
-                </div>
-                <div class="popular__card ">
-                    <h2>Advanced <br> UX Designs</h2>
-                </div>
-                <div class="popular__card ">
-                    <h2>NATURE <br> of Science</h2>
-                </div>
-                <div class="popular__card ">
-                    <h2>2022 <br> Astro Report</h2>
-                </div>
-            </div>
-            <div class="popular__btn with_common">
-                <button class="popular__btn--prev">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="popular__btn--next">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="title__section" class=" with_common">
-        <div class="container title__container">
-            <h1 class="title__txt">Competate with various scholars around the globe</h1>
-        </div>
-    </section>
-    <section id="form__section" class="with_common">
-        <div class="container form__container">
-            <div class="form__left">
-                <div class="art__box">
-                    <div class="thumb__art"></div>
-                </div>
-                <div class="form__card">
-                    <span class="user__icon">
-                        <i class="fa-regular fa-user"></i>
-                    </span>
-                    <h3 class="main__txt"> <span>Den</span> <br>of <br> Schorlars</h3>
-                </div>
-            </div>
-            <div class="form__right">
-                <form action="" class="form__container with_common">
-                    <p class="form__title">Registration to get notified about new competition and article we publish.
-                    </p>
-                    <div class="input__box">
-                        <input type="text" name="" id="" placeholder="Full name">
-                        <input type="email" name="" id="" placeholder="Email">
-                        <input type="text" name="" id="" placeholder="Phone number">
-                    </div>
-                    <div class="select__box">
-                        <span class="snow__icon">
-                            <i class="fa-solid fa-snowflake"></i>
+                    <div class="expert__card">
+                        <span class="user__icon">
+                            <i class="fa-regular fa-user"></i>
                         </span>
-                        <select class="form__list" name="" id="">
-                            <option value="">List of courses goes here</option>
-                            <option value="">Select course</option>
-                            <option value="">Select course</option>
-                        </select>
-                    </div>
-                    <button class="form__btn">Register</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    <section id="fetured__section" class="with_common">
-        <div class="container fetured__container">
-            <h1 class="fetured__title">Featured Competition</h1>
-            <a href="" class="slider__link">See all</a>
-            <div style="clear: both;"></div>
-            <div class="fetured__slider with_common">
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>Marketing Contest</h2>
-                        <p>The Future Economy</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>UI/UX Design Contest</h2>
-                        <p>Accessibility in design</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>Marketing Contest</h2>
-                        <p>The Future Economy</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>Programming Contest</h2>
-                        <p>The Future of AI</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>Photography Contest</h2>
-                        <p>Photography Contest</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-                <div class="fetured__card ">
-                    <div class="card__txt">
-                        <h2>Marketing Contest</h2>
-                        <p>The Future Economy</p>
-                        <p class="txt__hidden">Eligibility: For designers <br>
-                            Price: $60 <br>
-                            Deadline: 26/8/2022</p>
-                    </div>
-                </div>
-            </div>
-            <div class="fetured__btn with_common">
-                <button class="fetured__btn--prev">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="fetured__btn--next">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="public__section" class="with_common">
-        <div class="container public__container">
-            <div class="public__left">
-                <h1 class="main__title">Get <span>Publicstions</span> from best Aurtors around the Globe</h1>
-                <p class="sub__title">Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim
-                    pharetra. pharetra. Aliquam </p>
-                <button class="right__btn">Register</button>
-            </div>
-            <div class="public__right">
-                <div class="art__box">
-                </div>
-                <div class="public__card">
-                    <span class="user__icon">
-                        <i class="fa-solid fa-book-open"></i>
-                    </span>
-                    <h3 class="main__txt">Readers <br> are <br> <span>leaders</span></h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="recent__section" class="with_common">
-        <div class="container recent__container">
-            <h1 class="recent__title">Recent Publications</h1>
-            <a href="" class="slider__link">See all</a>
-            <div style="clear: both;"></div>
-            <div class="recent__slider with_common">
-                <div class="recent__card ">
-                    <h2>NATURE <br> of Science</h2>
-                </div>
-                <div class="recent__card ">
-                    <h2>2022 <br> Astro Report</h2>
-                </div>
-                <div class="recent__card ">
-                    <h2>Data Analysis <br> With Python</h2>
-                    <img src="./assets/images/python-logo.png" alt="Python Logo">
-                </div>
-                <div class="recent__card ">
-                    <h2>Advanced <br> UX Designs</h2>
-                </div>
-                <div class="recent__card ">
-                    <h2>NATURE <br> of Science</h2>
-                </div>
-                <div class="recent__card ">
-                    <h2>2022 <br> Astro Report</h2>
-                </div>
-            </div>
-            <div class="recent__btn with_common">
-                <button class="recent__btn--prev">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="recent__btn--next">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="review__section" class="with_common">
-        <div class="container review__container">
-            <h1 class="review__title">Reviews</h1>
-            <div class="review__slider--container">
-                <div class="review__left">
-                    <h1>What our <span>Students</span> say about us</h1>
-                    <div class="review__btn">
-                        <button class="review__btn--prev">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                        <button class="review__btn--next">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="review__right">
-                    <div class="slider__box">
-                        <div class="slider__item">
-                            <div class="content">
-                                <div class="thumb__art"></div>
-                                <div class="name__box">
-                                    <strong>Mohh Jumah</strong>
-                                    <p>Senior Developer</p>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa
-                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
-                                Interdum
-                                duis imperdiet venenatis </p>
+                        <h3 class="main__txt"> <span>Outstanding</span> <br>Instructors</h3>
+                        <div class="arts">
+                            <img class="one" src="./assets/images/arts.jpg" alt="">
+                            <img class="two" src="./assets/images/arts.jpg" alt="">
+                            <img class="three" src="./assets/images/arts.jpg" alt="">
                         </div>
-                        <div class="slider__item">
-                            <div class="content">
-                                <div class="thumb__art"></div>
-                                <div class="name__box">
-                                    <strong>John Mark</strong>
-                                    <p>Data Analyst</p>
-                                </div>
+                    </div>
+                </div>
+                <div class="experts__right">
+                    <h1 class="main__title">We are <span>Experts</span> Learning Institution</h1>
+                    <p class="sub__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum
+                        volutpat platea mi,
+                        adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </p>
+                    <button class="right__btn">Enroll now</button>
+                </div>
+            </div>
+        </section>
+        <section id="course__section" class="with_common">
+            <div class="container course__container">
+                <h1 class="course__title">Explore our popular course</h1>
+                <a href="" class="course__sort">
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                    Sort by</a>
+                <div style="clear: both;"></div>
+                <div class="course__list">
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Learn Marketing from Top Instructors.</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa
-                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
-                                Interdum
-                                duis imperdiet venenatis </p>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
                         </div>
-                        <div class="slider__item">
-                            <div class="content">
-                                <div class="thumb__art"></div>
-                                <div class="name__box">
-                                    <strong>Mohh Jumah</strong>
-                                    <p>Senior Developer</p>
-                                </div>
+                    </div>
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img2.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Front-end development is not hard as you think</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa
-                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
-                                Interdum
-                                duis imperdiet venenatis </p>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
                         </div>
-                        <div class="slider__item">
-                            <div class="content">
-                                <div class="thumb__art"></div>
-                                <div class="name__box">
-                                    <strong>Mohh Jumah</strong>
-                                    <p>Senior Developer</p>
-                                </div>
+                    </div>
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img3.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Everrything you need to know in UX</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa
-                                massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
-                                Interdum
-                                duis imperdiet venenatis </p>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img4.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Learn photography with ease</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
+                            </div>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img5.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Be a pro in data analysis</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
+                            </div>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course__list--item">
+                        <img src="./assets/images/course-img6.jpg" alt="">
+                        <div class="item__content">
+                            <div class="item__title">
+                                <h4>Ethical Harking is not hard as you think</h4>
+                                <span class="review">
+                                    <i class="fa-regular fa-star"></i>
+                                    4.5
+                                </span>
+                            </div>
+                            <div class="item__time">
+                                <div class="item__number">
+                                    <p>6 weeks</p>
+                                    <a href="">
+                                        <i class="fa-solid fa-users"></i>
+                                        1.5k Students
+                                    </a>
+                                </div>
+                                <h3 class="item__price">30.5$</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="examination__section" class="with_common">
+            <div class="container examination__container">
+                <div class="examination__left">
+                    <h1 class="main__title">Our online <span>examination</span> is top-notch</h1>
+                    <p class="sub__title">Prepare your self for greater challenges with our online examination.</p>
+                    <button class="right__btn">Take a rest</button>
+                </div>
+                <div class="examination__right">
+                    <div class="art__box">
+                        <img class="art__box--img" src="./assets/images/examination-img.png" alt="">
+                    </div>
+                    <div class="examination__card">
+                        <span class="user__icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </span>
+                        <h3 class="main__txt"> <span>Increase</span> <br>Your<br>Job opportunity</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="popular__section" class="with_common">
+            <div class="container popular__container">
+                <h1 class="popular__title">Popular examination</h1>
+                <a href="" class="slider__link">See all</a>
+                <div style="clear: both;"></div>
+                <div class="popular__slider with_common">
+                    <div class="popular__card ">
+                        <h2>NATURE <br> of Science</h2>
+                    </div>
+                    <div class="popular__card ">
+                        <h2>2022 <br> Astro Report</h2>
+                    </div>
+                    <div class="popular__card ">
+                        <h2>Data Analysis <br> With Python</h2>
+                        <img src="./assets/images/python-logo.png" alt="Python Logo">
+                    </div>
+                    <div class="popular__card ">
+                        <h2>Advanced <br> UX Designs</h2>
+                    </div>
+                    <div class="popular__card ">
+                        <h2>NATURE <br> of Science</h2>
+                    </div>
+                    <div class="popular__card ">
+                        <h2>2022 <br> Astro Report</h2>
+                    </div>
+                </div>
+                <div class="popular__btn with_common">
+                    <button class="popular__btn--prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="popular__btn--next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="title__section" class=" with_common">
+            <div class="container title__container">
+                <h1 class="title__txt">Competate with various scholars around the globe</h1>
+            </div>
+        </section>
+        <section id="form__section" class="with_common">
+            <div class="container form__container">
+                <div class="form__left">
+                    <div class="art__box">
+                        <img class="art__box--img" src="./assets/images/form-img.png" alt="">
+                    </div>
+                    <div class="form__card">
+                        <span class="user__icon">
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+                        <h3 class="main__txt"> <span>Den</span> <br>of <br> Schorlars</h3>
+                    </div>
+                </div>
+                <div class="form__right">
+                    <form action="" class="form__container with_common">
+                        <p class="form__title">Registration to get notified about new competition and article we
+                            publish.
+                        </p>
+                        <div class="input__box">
+                            <input type="text" name="" id="" placeholder="Full name">
+                            <input type="email" name="" id="" placeholder="Email">
+                            <input type="text" name="" id="" placeholder="Phone number">
+                        </div>
+                        <div class="select__box">
+                            <span class="snow__icon">
+                                <i class="fa-solid fa-snowflake"></i>
+                            </span>
+                            <select class="form__list" name="" id="">
+                                <option value="">List of courses goes here</option>
+                                <option value="">Select course</option>
+                                <option value="">Select course</option>
+                            </select>
+                        </div>
+                        <button class="form__btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="fetured__section" class="with_common">
+            <div class="container fetured__container">
+                <h1 class="fetured__title">Featured Competition</h1>
+                <a href="" class="slider__link">See all</a>
+                <div style="clear: both;"></div>
+                <div class="fetured__slider with_common">
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>Marketing Contest</h2>
+                            <p>The Future Economy</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>UI/UX Design Contest</h2>
+                            <p>Accessibility in design</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>Marketing Contest</h2>
+                            <p>The Future Economy</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>Programming Contest</h2>
+                            <p>The Future of AI</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>Photography Contest</h2>
+                            <p>Photography Contest</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                    <div class="fetured__card ">
+                        <div class="card__txt">
+                            <h2>Marketing Contest</h2>
+                            <p>The Future Economy</p>
+                            <p class="txt__hidden">Eligibility: For designers <br>
+                                Price: $60 <br>
+                                Deadline: 26/8/2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fetured__btn with_common">
+                    <button class="fetured__btn--prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="fetured__btn--next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="public__section" class="with_common">
+            <div class="container public__container">
+                <div class="public__left">
+                    <h1 class="main__title">Get <span>Publicstions</span> from best Aurtors around the Globe</h1>
+                    <p class="sub__title">Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim
+                        pharetra. pharetra. Aliquam </p>
+                    <button class="right__btn">Register</button>
+                </div>
+                <div class="public__right">
+                    <div class="art__box">
+                        <img class="art__box--img" src="./assets/images/public-img.png" alt="">
+                    </div>
+                    <div class="public__card">
+                        <span class="user__icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </span>
+                        <h3 class="main__txt">Readers <br> are <br> <span>leaders</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recent__section" class="with_common">
+            <div class="container recent__container">
+                <h1 class="recent__title">Recent Publications</h1>
+                <a href="" class="slider__link">See all</a>
+                <div style="clear: both;"></div>
+                <div class="recent__slider with_common">
+                    <div class="recent__card ">
+                        <h2>NATURE <br> of Science</h2>
+                    </div>
+                    <div class="recent__card ">
+                        <h2>2022 <br> Astro Report</h2>
+                    </div>
+                    <div class="recent__card ">
+                        <h2>Data Analysis <br> With Python</h2>
+                        <img src="./assets/images/python-logo.png" alt="Python Logo">
+                    </div>
+                    <div class="recent__card ">
+                        <h2>Advanced <br> UX Designs</h2>
+                    </div>
+                    <div class="recent__card ">
+                        <h2>NATURE <br> of Science</h2>
+                    </div>
+                    <div class="recent__card ">
+                        <h2>2022 <br> Astro Report</h2>
+                    </div>
+                </div>
+                <div class="recent__btn with_common">
+                    <button class="recent__btn--prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="recent__btn--next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="review__section" class="with_common">
+            <div class="container review__container">
+                <h1 class="review__title">Reviews</h1>
+                <div class="review__slider--container">
+                    <div class="review__left">
+                        <h1>What our <span>Students</span> say about us</h1>
+                        <div class="review__btn">
+                            <button class="review__btn--prev">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="review__btn--next">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="review__right">
+                        <div class="slider__box">
+                            <div class="slider__item">
+                                <div class="content">
+                                    <div class="thumb__art"></div>
+                                    <div class="name__box">
+                                        <strong>Mohh Jumah</strong>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam
+                                    massa
+                                    massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                    Interdum
+                                    duis imperdiet venenatis </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="content">
+                                    <div class="thumb__art"></div>
+                                    <div class="name__box">
+                                        <strong>John Mark</strong>
+                                        <p>Data Analyst</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam
+                                    massa
+                                    massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                    Interdum
+                                    duis imperdiet venenatis </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="content">
+                                    <div class="thumb__art"></div>
+                                    <div class="name__box">
+                                        <strong>Mohh Jumah</strong>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam
+                                    massa
+                                    massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                    Interdum
+                                    duis imperdiet venenatis </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="content">
+                                    <div class="thumb__art"></div>
+                                    <div class="name__box">
+                                        <strong>Mohh Jumah</strong>
+                                        <p>Senior Developer</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam
+                                    massa
+                                    massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus.
+                                    Interdum
+                                    duis imperdiet venenatis </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="with_common">
         <div class="container footer__container">
             <div class="with_common text__box">

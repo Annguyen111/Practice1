@@ -92,3 +92,37 @@ function scrollToTop() {
     var element = document.documentElement;
     element.scrollIntoView({ behavior: "smooth", block: "start" });
 }
+
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    var registerBtn = document.querySelector('.register__btn');
+    var linkNav = [document.querySelectorAll('.link-open')];
+    var searchBtn = this.document.querySelector('.search__btn');
+    var loginBtn = this.document.querySelector('.login__btn');
+    var scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 100) { 
+        header.classList.add('fixed');
+        registerBtn.style.backgroundColor = 'rgba(255, 111, 40, 1)';
+        registerBtn.style.color = '#ffffff'
+        linkNav.forEach((item, i) => {
+            item.forEach((link, i) => {
+                link.style.color = 'rgba(255, 111, 40, 1)';
+            })
+        })
+        loginBtn.style.color = 'rgba(255, 111, 40, 1)'
+        searchBtn.style.color = 'rgba(255, 111, 40, 1)'
+    } else {
+        header.classList.remove('fixed');
+        registerBtn.style.backgroundColor = '#ffffff';
+        registerBtn.style.color = 'rgba(255, 111, 40, 1)'
+        linkNav.forEach((item, i) => {
+            item.forEach((link, i) => {
+                link.style.color = '#ffffff';
+            })
+        })
+        loginBtn.style.color = '#ffffff'
+        searchBtn.style.color = '#ffffff'
+
+    }
+});
