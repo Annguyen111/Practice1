@@ -339,4 +339,388 @@
     line-height: 21px;
     margin: 10px 0px;
   }
+
+  /* Examination */
+  #examination__section {
+    height: 100%;
+  }
+
+  .examination__container {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    flex-wrap: wrap-reverse;
+  }
+
+  .examination__right {
+    width: 100%;
+  }
+
+  .examination__right .art__box {
+    height: 480px;
+  }
+
+  .examination__right .examination__card {
+    width: 130px;
+    height: 135px;
+    padding: 10px 10px;
+    top: 253px;
+    left: -16px;
+  }
+
+  .examination__card .user__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .examination__card .user__icon i {
+    font-size: 14px;
+  }
+
+  .examination__card .main__txt {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .examination__card .main__txt span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .examination__card .main__txt span::before {
+    width: 56px;
+    left: 26px;
+    top: 18px;
+  }
+
+  .examination__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .examination__left .main__title {
+    font-size: 32px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .examination__left span {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .examination__left .sub__title {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    height: 100%;
+  }
+
+  .examination__left .right__btn {
+    margin-top: 30px;
+  }
+
+  /* Popular */
+
+  #popular__section {
+    margin-top: 0px;
+  }
+
+  .popular__container .popular__title {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .popular__btn {
+    display: none;
+  }
+
+  .popular__slider .popular__card {
+    width: 160px;
+    height: 160px;
+    background-position: 42% 70%;
+  }
+
+  .popular__slider {
+    gap: 15px;
+  }
+
+  .popular__card h2 {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  /* Title */
+  .title__container h1 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .title__container {
+    padding-bottom: 40px;
+  }
+
+  /* Form */
+  .form__container {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .form__left {
+    width: 100%;
+  }
+
+  .form__left .art__box {
+    padding-bottom: 0;
+    height: 100%;
+  }
+
+  .form__card .user__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .form__card .user__icon i {
+    font-size: 14px;
+  }
+
+  .form__left .form__card {
+    width: 131px;
+    height: 137px;
+    padding: 15px 15px;
+    top: 233px;
+    left: 243px;
+  }
+
+  .form__card .main__txt {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .form__card .main__txt span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .form__card .main__txt span::before {
+    width: 25px;
+    left: 20px;
+    top: 19px;
+  }
+
+  .form__right {
+    width: 100%;
+  }
+
+  .form__right .form__container {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .form__right .title-hidden {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .form__right .form__title {
+    display: none;
+  }
+
+  .form__container .input__box input {
+    font-size: 16px;
+    line-height: 21.31px;
+    padding: 15px 15px;
+    color: rgba(139, 139, 139, 1);
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 1);
+    border: 0.76px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .select__box {
+    margin-top: -50px;
+  }
+
+  .select__box .snow__icon {
+    display: none;
+  }
+
+  .form__container .form__list {
+    width: 100%;
+    color: rgba(64, 64, 64, 0.8);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: rgba(242, 242, 242, 1);
+    border: 0.76px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .form__container .form__btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Featured */
+  #fetured__section {
+    margin-top: 0;
+  }
+
+  .fetured__container .fetured__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .fetured__btn {
+    display: none;
+  }
+
+  .fetured__slider .fetured__card {
+    width: 140px;
+    height: 150px;
+    background-position: 90% 70%;
+    border-radius: 5px;
+  }
+
+  .fetured__slider .fetured__card::before {
+    border-radius: 5px;
+  }
+
+  .fetured__card .card__txt {
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    bottom: -90px;
+  }
+
+  .fetured__card .card__txt h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fetured__card .card__txt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .txt__hidden {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fetured__card .card__txt .txt__hidden,
+  .fetured__card .card__txt p {
+    display: none;
+  }
+
+  .fetured__slider {
+    gap: 20px;
+    overflow: auto;
+  }
+
+  /* Public */
+  #public__section {
+    height: 100%;
+  }
+
+  .public__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+  }
+
+  .public__right {
+    width: 100%;
+  }
+
+  .public__right .art__box--img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .public__right .art__box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .public__right .public__card {
+    width: 131px;
+    height: 132px;
+    top: 110px;
+    left: 240px;
+  }
+
+  .public__card .user__icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .public__card .user__icon i {
+    font-size: 14px;
+  }
+
+  .public__card .main__txt {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .public__card .main__txt span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .public__card .main__txt span::before {
+    width: 45px;
+    left: 5px;
+    top: 60px;
+  }
+
+  .public__left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .public__left .main__title {
+    font-size: 32px;
+    line-height: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .public__left span {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .public__left .main__title span::before {
+    width: 180px;
+    left: 11px;
+    top: 39px;
+    transform: rotate(0deg);
+  }
+
+  .public__left .sub__title {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .public__left .right__btn {
+    margin-top: 20px;
+  }
 }
