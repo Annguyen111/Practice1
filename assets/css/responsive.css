@@ -27,6 +27,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
     transition: all 0.5s linear;
   }
 
@@ -722,5 +723,201 @@
 
   .public__left .right__btn {
     margin-top: 20px;
+  }
+
+  /* Recent */
+  #recent__section {
+    margin-top: 0px;
+  }
+
+  .recent__container .recent__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .recent__btn {
+    display: none;
+  }
+
+  .recent__slider .recent__card {
+    width: 150px;
+    height: 150px;
+    background-position: 50% 70%;
+  }
+
+  .recent__slider {
+    gap: 15px;
+  }
+
+  .recent__card h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* Review */
+  .review__container .review__title {
+    display: none;
+  }
+
+  .review__container .review__slider--container {
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+
+  .review__slider--container .review__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .review__slider--container .review__right {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .review__left h1 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 74%;
+  }
+
+  .review__left h1 span {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .review__left h1 span::before {
+    width: 100px;
+    height: 8px;
+    left: 5px;
+    top: 30px;
+  }
+
+  .review__btn {
+    margin-top: 0px;
+    width: 26%;
+  }
+
+  .review__btn button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider__box .slider__item {
+    width: 165px;
+    height: 100%;
+    padding: 0px;
+  }
+
+  .review__right .slider__box {
+    gap: 30px;
+  }
+
+  .review__btn .review__btn--next {
+    margin-left: 30px;
+  }
+
+  .slider__item .content .thumb__art {
+    width: 28px;
+    height: 28px;
+  }
+
+  .name__box strong {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .slider__item .content {
+    margin-bottom: 15px;
+  }
+
+  .slider__item p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .slider__item .content .name__box {
+    line-height: 20px;
+    margin-left: 10px;
+  }
+
+  /* Footer */
+  .text__box--link p {
+    display: none;
+  }
+
+  .footer__container {
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+
+  .footer__container .text__box {
+    flex-wrap: wrap-reverse;
+    order: 2;
+  }
+
+  .logo__box {
+    order: 3;
+  }
+
+  .footer__container .email__box {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .email__box h3 {
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .email__box .form__email input {
+    width: 70%;
+    padding: 13px 15px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .email__box .form__email button {
+    padding: 13px 15px;
+    font-size: 10px;
+    line-height: 15px;
+    width: 30%;
+  }
+
+  .text__box .address__box {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 35px;
+    gap: 40px;
+  }
+
+  .text__box .text__box--link {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .link__box .link__item a {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+  }
+
+  .logo__box .logo__img {
+    width: 210.63px;
+    height: 45px;
+  }
+
+  .logo__box .author {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .logo__box {
+    margin-top: 50px;
+    flex-wrap: wrap;
   }
 }

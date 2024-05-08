@@ -87,19 +87,20 @@ ul {
   color: var(--main--color);
   font-weight: 600;
   display: none;
+  padding: 10px;
 }
 
 .logo-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
 }
 
 .logo-box .menu {
   color: rgba(0, 0, 0, 1);
   font-size: 20px;
   display: none;
+  padding: 10px;
 }
 
 .header__logo::after {
@@ -355,7 +356,7 @@ ul {
 
 .category__slider {
   margin-top: 30px;
-  overflow: hidden;
+  overflow: auto;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
@@ -1624,7 +1625,7 @@ footer {
   color: var(--main--color);
   font-size: 33px;
   font-weight: 600;
-  line-height: 41.23px;
+  line-height: 41px;
   font-family: Source Code Pro, sans-serif;
   position: relative;
 }
@@ -1677,7 +1678,7 @@ footer {
 }
 
 .link__item a i {
-  width: 19.05px;
+  width: 20px;
   height: 20px;
 }
 
@@ -1987,7 +1988,7 @@ footer {
 
 .recent__slider {
   margin-top: 30px;
-  overflow-x: auto;
+  overflow: auto;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
