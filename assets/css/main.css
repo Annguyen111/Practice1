@@ -125,7 +125,7 @@ ul {
   top: 10px;
 }
 
-.nav__main .nav__item {
+.nav-main .nav__item {
   height: 68px;
   width: 124px;
   display: inline-block;
@@ -134,15 +134,15 @@ ul {
   position: relative;
 }
 
-.nav__main .nav__item:hover .item-link {
+.nav-main .nav__item:hover .item-link {
   transform: translateY(-50%);
 }
 
-.nav__main .nav__item:not(:hover) .item-link {
+.nav-main .nav__item:not(:hover) .item-link {
   transform: translateY(0);
 }
 
-.nav__main .nav__item a {
+.nav-main .nav__item a {
   color: #ffffff;
   font-size: 16px;
   line-height: 48px;
@@ -178,6 +178,10 @@ ul {
   font-weight: 600;
   line-height: 20px;
   font-family: Source Code Pro, sans-serif;
+}
+
+.nav-mobile {
+  display: none;
 }
 
 .header__btn .register__btn {

@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
   .container {
     width: 95%;
   }
@@ -9,9 +9,14 @@
     width: 100%;
     top: 0;
     z-index: 10;
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
   }
 
   .scroll__btn--up {
+    display: none;
+  }
+
+  .nav-main {
     display: none;
   }
 
@@ -19,16 +24,46 @@
     font-size: 24px;
   }
 
-  .nav__main.sidebar {
+  .nav-mobile.sidebar {
     position: fixed;
     top: 0;
-    left: -100%;
-    width: 100%;
+    left: -400px;
+    width: 80%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
-    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
     transition: all 0.5s linear;
+  }
+
+  .nav-mobile.sidebar .close-btn {
+    color: rgba(255, 111, 40, 1);
+  }
+
+  .nav-mobile.sidebar .close-btn i {
+    font-size: 25px;
+    padding: 20px 25px;
+  }
+
+  .nav-mobile.sidebar .nav__item:hover {
+    background-color: #ffffff;
+  }
+
+  .nav-mobile.sidebar .nav__item a {
+    display: block;
+    padding: 20px 25px;
+    color: rgba(255, 111, 40, 1);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .nav-main {
+    width: 100%;
+    height: 100%;
   }
 
   .header__logo::before {
