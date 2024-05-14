@@ -135,9 +135,9 @@ const closeBtn = document.querySelector('.close-btn')
 const navMobile = document.querySelector('.nav-mobile.sidebar')
 
 menuBtn.addEventListener('click', () => {
-    navMobile.style.left = '0'
+    navMobile.style.left = '0%'
 })
 
 closeBtn.addEventListener('click', () => {
-    navMobile.style.left = '-400px'
+    navMobile.style.left = '-100%'
 })

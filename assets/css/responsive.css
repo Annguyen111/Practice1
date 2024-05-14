@@ -1,4 +1,4 @@
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
     width: 95%;
   }
@@ -27,7 +27,7 @@
   .nav-mobile.sidebar {
     position: fixed;
     top: 0;
-    left: -400px;
+    left: -100%;
     width: 80%;
     height: 100%;
     display: flex;
@@ -955,4 +955,24 @@
     margin-top: 50px;
     flex-wrap: wrap;
   }
+}
+
+@media (min-width: 2200px) {
+  /* Banner */
+  .banner__content {
+    margin-top: 250px;
+  }
+
+  .banner__other {
+    transform: translateY(120%);
+  }
+
+  .examination__right .examination__card {
+    left: 150px;
+  }
+
+  .form__left .art__box {
+    width: 70%;
+    height: 70%;
+}
 }
