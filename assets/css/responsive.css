@@ -958,6 +958,11 @@
 }
 
 @media (min-width: 2200px) {
+  .category__container .category__title {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
   /* Banner */
   .banner__content {
     margin-top: 250px;
@@ -967,12 +972,211 @@
     transform: translateY(120%);
   }
 
+  .course__container .course__title {
+    font-size: 55px;
+  }
+
   .examination__right .examination__card {
     left: 150px;
+    width: 251px;
+    height: 228px;
+    padding: 20px 20px;
+    top: 503px;
+  }
+
+  .examination__card .main__txt span::before {
+    width: 85px;
+    left: 52px;
+    top: 36px;
+  }
+
+  .examination__card .user__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .examination__card .main__txt {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .examination__card .main__txt span {
+    font-size: 25px;
   }
 
   .form__left .art__box {
     width: 70%;
     height: 70%;
-}
+  }
+
+  .experts__left {
+    width: 50%;
+  }
+
+  .experts__right {
+    width: 50%;
+  }
+
+  .experts__left .art__box {
+    width: 70%;
+    height: 70%;
+  }
+
+  .experts__left .expert__card {
+    width: 231px;
+    height: 240px;
+    padding: 20px 25px;
+    top: 480px;
+    left: 65%;
+  }
+
+  .experts__right .main__title {
+    font-size: 70px;
+    line-height: 85px;
+    width: 65%;
+  }
+
+  .experts__right span::before {
+    width: 246px;
+    top: 96px;
+  }
+
+  .experts__right span {
+    font-size: 70px;
+  }
+
+  .experts__right .sub__title {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    width: 60%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .experts__right .right__btn {
+    padding: 25px 40px;
+  }
+
+  .examination__left .main__title {
+    font-size: 70px;
+    line-height: 85px;
+    width: 60%;
+  }
+
+  .examination__left span {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  .examination__left .sub__title {
+    margin-top: 30px;
+    width: 50%;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .examination__left .right__btn {
+    padding: 25px 40px;
+  }
+
+  .examination__right .art__box {
+    width: 70%;
+    height: 70%;
+  }
+
+  .popular__container .popular__title {
+    font-size: 55px;
+  }
+
+  .public__right {
+    width: 50%;
+  }
+
+  .public__left {
+    width: 50%;
+  }
+
+  .public__left .main__title {
+    font-size: 70px;
+    line-height: 85px;
+    width: 75%;
+  }
+
+  .public__left span {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  .public__left .sub__title {
+    margin-top: 25px;
+    width: 70%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .public__left .right__btn {
+    padding: 25px 40px;
+  }
+
+  .public__right .art__box {
+    width: 70%;
+    height: 70%;
+  }
+
+  .public__right .public__card {
+    width: 226px;
+    height: 230px;
+    padding: 20px 20px;
+    top: 280px;
+    left: 100px;
+  }
+
+  .public__card .user__icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .public__card .user__icon i {
+    font-size: 30px;
+  }
+
+  .public__card .main__txt {
+    font-size: 30px;
+  }
+
+  .public__card .main__txt span {
+    font-size: 30px;
+  }
+
+  .public__card .main__txt span::before {
+    width: 95px;
+    height: 6px;
+    top: 90px;
+  }
+
+  .review__left h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+
+  .review__left h1 span {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .review__left h1 span::before {
+    width: 280px;
+    height: 8.8px;
+    left: 16px;
+    top: 85px;
+  }
+
+  .review__btn i {
+    font-size: 30px;
+  }
+
+  .review__btn button {
+    width: 80px;
+    height: 80px;
+  }
 }

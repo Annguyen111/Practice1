@@ -300,7 +300,7 @@ ul {
 }
 
 .banner__content .banner__other {
-  width: 50%;
+  width: 65%;
 }
 
 .banner__content .banner__other li {
@@ -360,7 +360,7 @@ ul {
 
 .category__slider {
   margin-top: 30px;
-  overflow-x: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
@@ -500,7 +500,7 @@ ul {
 
 /* Experts Section */
 #experts__section {
-  height: 671px;
+  height: 100%;
   background: url("../images/experts-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -853,7 +853,8 @@ ul {
 
 /* Examination Section */
 #examination__section {
-  height: 671px;
+
+  height: 100%;
   background: url("../images/experts-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -944,6 +945,7 @@ ul {
 }
 
 .examination__right {
+  user-select: none;
   width: 50%;
   position: relative;
   display: flex;
@@ -1454,7 +1456,7 @@ ul {
 
 .fetured__slider {
   margin-top: 30px;
-  overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   display: flex;
   justify-content: space-between;
@@ -1801,7 +1803,7 @@ footer {
 /* Public Section */
 
 #public__section {
-  height: 671px;
+  height: 100%;
   background: url("../images/experts-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
